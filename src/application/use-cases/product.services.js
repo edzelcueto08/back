@@ -1,10 +1,13 @@
 class ProductService {
     constructor(productRepository) { // ¡Depende de la interfaz!
         this.productRepository = productRepository;
-    } async getAllProducts() {
+    }
+    async getAllProducts() {
         return this.productRepository.getAll();
-    } async createProduct(productData) {
+    }
+    async createProduct(productData) {
         // Aquí iría la lógica de negocio (validaciones, etc.)
         return this.productRepository.create(productData);
     }
-} module.exports = ProductService;
+}
+module.exports = ProductService;

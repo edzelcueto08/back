@@ -17,7 +17,7 @@ class OrderService {
         const total = this.calculateTotal(orderData);
 
         const orderEntity = new Order(
-            null,                           // id lo pone Mongo
+            null,                         
             orderData.product,
             orderData.description,
             orderData.quantity,
